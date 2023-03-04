@@ -1,0 +1,341 @@
+/*----all----*/
+@font-face { 
+    font-family: "MullerBold";
+    src: url("/font/MullerBold.woff") format("woff");
+    font-weight: bold;
+}
+@font-face { 
+    font-family: "MullerRegular";
+    src: url("/font/MullerRegular.woff") format("woff");
+}
+* {
+    box-sizing: border-box; /*padding не влияют на внешние размеры элемента, они отступаются внутри*/
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+html {
+    max-width: 1920px;
+    background: #E5E5E5;
+}
+
+.container {
+    max-width: 1170px;
+    /*контейнер располагается по центру своих родителей (в нашем случае экрана)*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    margin-bottom: 70px;
+}
+ul {
+    list-style: none; /*свойства маркеров в списке*/
+}
+.title {
+    font-size: 40px;
+    margin-left: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.btn {
+    height: 42px;
+}
+/*---header---*/
+.header {
+    
+}
+.header__container {
+    padding-top: 30px;
+}
+.header__first-block { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 54px;
+}
+.header__section {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    max-height: 54px;
+}
+.header__telephone {
+    font-size: 20px;
+    margin-left: 40px;
+    line-height: 1px;
+}
+.header__second-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 14px 45px;
+    align-items: center;
+}
+.header__nav-list {
+    display: flex;
+}
+.header__btn-tour {
+    margin-right: 40px;
+}
+.header__nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+/*----offers----*/
+.offers__list{
+    display: flex;
+}
+.offers__tour {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    margin-right: 24px;
+}
+.offers__title {
+    /*padding-bottom: 20px;*/
+}
+.offers__item {
+    border-radius: 15px;
+    height: 258px;
+    width: 573px;
+    position: relative;
+}
+.offers__item:first-child {
+    background-image: url('/img/maldivi.jpg');
+    background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
+    Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
+    margin-bottom: 24px;
+}
+.offers__item:nth-child(2) {
+    background-image: url('/img/krit.jpg');
+    background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
+    Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
+}
+.offers__luxe {
+    background-image: url('/img/luxe.jpg');
+    background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
+    Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
+    Width: 573px;
+    Height: 540px;
+    position: relative;
+    border-radius: 15px;
+}
+.offers__name {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 45px;
+    top: 40px;
+}
+.offers__price {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+    left: 45px;
+    top: 135px;
+}
+.offers__detailed {
+    color: #F0BF5F;
+    position: absolute;
+    left: 45px;
+    top: 202px;
+}
+.offers__luxe .offers__name{
+    top: 212px;
+}
+.offers__luxe .offers__price{
+    top: 407px;
+}
+.offers__luxe .offers__detailed{
+    top: 484px;
+}
+/*----about----*/
+.about__title {
+    /*margin-bottom: 20px;*/
+}
+.about__text {
+    max-width: 888px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+/*----------services-----*/
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services__item {
+    background-color: #FFFFFF;
+    width: 573px;
+    height: 330px;
+    border-radius: 15px;
+    position: relative;
+}
+.services__item:first-child {
+    margin-bottom: 24px;
+    background-image: url("/img/shampain.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services__item:nth-child(2) {
+    margin-bottom: 24px;
+    background-image: url("/img/table.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services__item:nth-child(3) {
+    margin-bottom: 24px;
+    background-image: url("/img/sauna.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services__item:nth-child(4) {
+    margin-bottom: 24px;
+    background-image: url("/img/car.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services__tab-nav {
+    font-size: 20px;
+    font-weight: 500;
+    color: #CC9933;
+    position: absolute;
+    left: 45px;
+    bottom: 99px;
+}
+.services__description {
+    line-height: 200%;
+    position: absolute;
+    left: 45px;
+    bottom: 35px;
+}
+/*--------benefits------*/
+.benefits__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits__item {
+    background-color: #FFFFFF;
+    width: 276px;
+    height: 276px;
+    border-radius: 15px;
+    position: relative;
+}
+.benefits__item:not(:nth-child(4n))  {
+    margin-right: 22px;
+}
+.benefits__item:not(:nth-child(n+5))  { /*n+5 - все элементы, кроме первых четырех, not --> первые 4*/
+    margin-bottom: 22px;
+}
+.benefits__text {
+    position: absolute;
+    line-height: 200%;
+    left: 45px;
+    bottom: 32px;
+}
+.benefits__img {
+    position: absolute;
+    left: 45px;
+    top: 40px;
+}
+/*----placement-----*/
+.placement__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.placement__item {
+    position: relative;
+    width: 374px;
+    height: 440px;
+    background-color: white;
+    border-radius: 15px;
+}
+.placement__item:not(:nth-child(3n))  {
+    margin-right: 24px;
+}
+.placement__item:not(:nth-child(n+7))  { /*n+7 - все элементы, кроме первых шести, not --> первые 6*/
+    margin-bottom: 24px;
+}
+.placement__btn {
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+    background-color: #FFFFFF;
+    padding: 13px 20px;
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+}
+.placement__country {
+    line-height: 16px;
+    color: #999999;
+    position: absolute;
+    left: 45px;
+    bottom: 107px;
+}
+.placement__hotel {
+    line-height: 16px;
+    position: absolute;
+    left: 45px;
+    top: 285px;
+}
+.placement__price {
+    position: absolute;
+    left: 45px;
+    top: 249px;
+}
+.placement__stars {
+    position: absolute;
+    right: 45px;
+    top: 252px;
+}
+.placement__item:first-child {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(2) {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(3) {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(4) {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(5){
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+
+.placement__item:nth-child(6) {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(7){
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:nth-child(8){
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+}
+.placement__item:last-child{
+    background-image: url('/img/island.jpg');
+    background-repeat: no-repeat;
+}
+.placement__tab-nav {
+    position: absolute;
+    color:#FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    left: 54px;
+    bottom: 27px;
+}
