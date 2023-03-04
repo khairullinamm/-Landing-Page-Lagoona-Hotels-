@@ -295,47 +295,49 @@
         <section class="want">
             <div class="want__container container">
                 <h2 class="want__title title">Хочу тур</h2>
-                <div class="want__city">
-                    <span class="want__city-name">Город вылета</span>
-                    <form class="want__city-form" action="" method="post">
-                        <select>
-                            <option>Санкт-Петербург</option>
-                            <option>Москва</option>
-                            <option>Архангельск</option>
-                            <option>Киров</option>
-                          </select>
-                    </form>
+                <div class="want__panel">
+                    <div class="want__city want__topic">
+                        <span class="want__city-name">Город вылета</span>
+                        <form class="want__city-form" action="" method="post">
+                            <select>
+                                <option>Санкт-Петербург</option>
+                                <option>Москва</option>
+                                <option>Архангельск</option>
+                                <option>Киров</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="want__country want__topic">
+                        <span class="want__country-name">Страна</span>
+                        <form class="want__country-form" action="" method="post">
+                            <select>
+                                <option>Россия</option>
+                                <option>Канада</option>
+                                <option>Австралия</option>
+                                <option>Турция</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="want__date want__topic">
+                        <span class="want__date-name">Дата прибытия</span>
+                        <form class="want__date-form" action="" method="post">
+                            <input type="date" name="calendar">
+                        </form>
+                    </div>
+                    <div class="want__nights want__topic">
+                        <span class="want__nights-name">Ночей</span>
+                        <form class="want__nights-form" action="" method="post">
+                            <input type="number" name="nights" value="1" min="1" max="10" step="1">
+                        </form>
+                    </div>
+                    <div class="want__tourist want__topic">
+                        <span class="want__tourist-name">Туристы</span>
+                        <form class="want__tourist-form" action="" method="post">
+                            <input type="number" name="tourist" value="1" min="1" max="10" step="1">
+                        </form>
+                    </div>
+                    <button class="btn want__btn">Найти</button>
                 </div>
-                <div class="want__country">
-                    <span class="want__country-name">Страна</span>
-                    <form class="want__country-form" action="" method="post">
-                        <select>
-                            <option>Россия</option>
-                            <option>Канада</option>
-                            <option>Австралия</option>
-                            <option>Турция</option>
-                          </select>
-                    </form>
-                </div>
-                <div class="want__date">
-                    <span class="want__date-name">Дата прибытия</span>
-                    <form class="want__date-form" action="" method="post">
-                        <input type="date" name="calendar">
-                    </form>
-                </div>
-                <div class="want__nights">
-                    <span class="want__nights-name">Ночей</span>
-                    <form class="want__nights-form" action="" method="post">
-                        <input type="number" name="nights" value="1" min="1" max="10" step="1">
-                    </form>
-                </div>
-                <div class="want__tourist">
-                    <span class="want__tourist-name">Туристы</span>
-                    <form class="want__tourist-form" action="" method="post">
-                        <input type="number" name="tourist" value="1" min="1" max="10" step="1">
-                    </form>
-                </div>
-                <button class="btn want__btn">Найти</button>
             </div>
         </section>
         <section class="contacts">

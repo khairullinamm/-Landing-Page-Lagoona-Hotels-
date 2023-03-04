@@ -339,3 +339,46 @@ ul {
     left: 54px;
     bottom: 27px;
 }
+/*----want-----*/
+.want__container {
+    background-color: #E9E9E9;
+    height: 256px;
+    border-radius: 15px;
+}
+.want__title {
+    padding-top: 45px;
+}
+.want__panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 106px;
+    width: 1080px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.want__city-name, .want__country-name, .want__date-name, .want__nights-name, .want__tourist-name{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+}
+.want__topic {
+    margin-top: 31px;
+    margin-right: 41px;
+}
+.want__topic:last-of-type {
+    margin-right: 51px;
+}
+.want__city {
+    margin-left: 28px;
+}
+.want__btn {
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+    background-color: #FFFFFF;
+    padding: 13px 20px;
+    margin-right: 28px;
+    margin-top: 31px;
+}
