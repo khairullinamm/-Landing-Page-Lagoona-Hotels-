@@ -445,3 +445,35 @@ ul {
     text-align: center;
     padding: 27px 29.5px;
 }
+/*-----footer---*/
+.footer__container {
+    background-color: #333333;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 302px;
+    line-height: 30px;
+    background-image: url(/img/sun.png);
+}
+.footer__right {
+    margin-left: 125px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    max-width: 359px;
+}
+.footer__address {
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.footer__mobile {
+    margin-bottom: 15px;
+}
