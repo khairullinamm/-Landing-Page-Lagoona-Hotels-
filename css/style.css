@@ -454,6 +454,7 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 45px;
+    height: 341px;
 }
 .footer__left {
     display: flex;
@@ -461,7 +462,10 @@ ul {
     justify-content: space-between;
     max-width: 302px;
     line-height: 30px;
-    background-image: url(/img/sun.png);
+}
+.footer__img {
+    margin-right: 107px;
+    margin-bottom: 0;
 }
 .footer__right {
     margin-left: 125px;
