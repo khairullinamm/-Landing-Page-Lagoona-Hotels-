@@ -35,6 +35,7 @@ ul {
     margin-left: 40px;
     color: #333333;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 .btn {
     height: 42px;
@@ -133,7 +134,7 @@ ul {
     margin-right: 24px;
 }
 .offers__title {
-    /*padding-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 .offers__item {
     border-radius: 15px;
@@ -142,13 +143,13 @@ ul {
     position: relative;
 }
 .offers__item:first-child {
-    background-image: url('/img/maldivi.jpg');
+    background-image: url('/img/gradient.png'), url('/img/maldivi.jpg');
     background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
     Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
     margin-bottom: 24px;
 }
 .offers__item:nth-child(2) {
-    background-image: url('/img/krit.jpg');
+    background-image: url('/img/gradient.png'), url('/img/krit.jpg');
     background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
     Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
 }
@@ -170,6 +171,10 @@ ul {
     left: 45px;
     top: 40px;
 }
+.offers__name-luxe {
+    font-size: 60px;
+    line-height: 60px;
+}
 .offers__price {
     position: absolute;
     font-size: 20px;
@@ -179,11 +184,24 @@ ul {
     left: 45px;
     top: 135px;
 }
+.offers__price-luxe {
+    font-size: 30px;
+    line-height: 30px;
+}
 .offers__detailed {
-    color: #F0BF5F;
     position: absolute;
     left: 45px;
     top: 202px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width:102px;
+}
+.offers__detailed-text {
+    color: #F0BF5F;
+}
+.offers__icon {
+
 }
 .offers__luxe .offers__name{
     top: 212px;
@@ -240,13 +258,21 @@ ul {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.service__tab {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 45px;
+    bottom: 99px;
+}
 .services__tab-nav {
     font-size: 20px;
     font-weight: 500;
     color: #CC9933;
-    position: absolute;
-    left: 45px;
-    bottom: 99px;
+    line-height: 40px;
+}
+.services__icon {
+    margin-left: 7px;
 }
 .services__description {
     line-height: 200%;
@@ -324,6 +350,12 @@ ul {
     left: 45px;
     top: 249px;
 }
+.placement__price-from {
+    color:  #999999;
+}
+.placement__price-number {
+    font-weight: 700;
+}
 .placement__stars {
     position: absolute;
     right: 45px;
@@ -334,32 +366,32 @@ ul {
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(2) {
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona son típicas.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(3) {
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona de la guerra.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(4) {
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona mentira piadosa.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(5){
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona empujar la creatividad.jpg');
     background-repeat: no-repeat;
 }
 
 .placement__item:nth-child(6) {
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona el retorno.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(7){
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona mentira piadosa2.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(8){
-    background-image: url('/img/hotel.jpg');
+    background-image: url('/img/Lagoona suerte siguió siempre.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:last-child{
@@ -374,6 +406,10 @@ ul {
     line-height: 40px;
     left: 54px;
     bottom: 27px;
+}
+.placement__arrow {
+    margin-left: 306px;
+    margin-top: 383px;
 }
 /*----want-----*/
 .want__container {
@@ -393,11 +429,19 @@ ul {
     border-radius: 15px;
     margin: 0 auto;
 }
-.want__city-name, .want__country-name, .want__date-name, .want__nights-name, .want__tourist-name{
+.want__name{
     display: inline-block;
     font-size: 12px;
     line-height: 12px;
     margin-bottom: 15px;
+}
+.want__topic:hover .want__name{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.want__topic:active .want__name{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .want__topic {
     margin-top: 31px;
@@ -438,13 +482,16 @@ ul {
     line-height: 20px;
     font-weight: 700;
 }
-.contacts__text-block:not(:last-child) {
-    margin-bottom: 25px;
-}
 .contacts__text-block {
     display: flex;
     padding-bottom: 23px;
     border-bottom: #E9E9E9 1px solid;
+}
+.contacts__text-block {
+    margin-bottom: 25px;
+}
+.contacts__text-block:last-of-type {
+    margin-bottom: 45px;
 }
 :root {
 	--address__width: 62px;
@@ -470,7 +517,7 @@ ul {
 }
 .contacts__btn {
     text-align: center;
-    padding: 27px 29.5px;
+    padding: 35px 29.5px;
 }
 /*-----footer---*/
 .footer__container {
@@ -482,6 +529,7 @@ ul {
     justify-content: space-between;
     padding: 45px;
     height: 341px;
+    position: relative;
 }
 .footer__left {
     display: flex;
@@ -491,8 +539,9 @@ ul {
     line-height: 30px;
 }
 .footer__img {
-    margin-right: 107px;
-    margin-bottom: 0;
+    position: absolute;
+    right: 177px;
+    bottom: 0;
 }
 .footer__right {
     margin-left: 125px;
@@ -507,4 +556,13 @@ ul {
 }
 .footer__mobile {
     margin-bottom: 15px;
+}
+.contacts__agreement, .footer__email, .footer__mobile {
+    color: #CC9933;
+}
+.footer__social {
+    max-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
