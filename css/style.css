@@ -170,8 +170,6 @@ ul {
 }
 .offers__item:first-child {
     background-image: url('../img/gradient.png'), url('../img/maldivi.jpg');
-    background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
-    Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
     margin-bottom: 24px;
 }
 .offers__item:nth-child(2) {
