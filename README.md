@@ -1,4 +1,5 @@
 Try it here: https://khairullinamm.github.io/-Landing-Page-Lagoona-Hotels-/
+
 Верстка макета -"Lagoona Hotels" с использованием HTML и CSS.
 
 1. Придерживание концепции Pixel Perfect
