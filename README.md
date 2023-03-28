@@ -6,4 +6,4 @@ Try it here: https://khairullinamm.github.io/-Landing-Page-Lagoona-Hotels-/
 3. Использование технологии FlexBox
 
 
-https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png
+![Иллюстрация к проекту](https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png)
