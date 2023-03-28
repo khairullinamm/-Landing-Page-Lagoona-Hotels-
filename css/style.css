@@ -575,7 +575,7 @@ ul {
     border-radius: 15px;
     color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    
     padding: 45px;
     height: 341px;
     position: relative;
@@ -587,6 +587,7 @@ ul {
     max-width: 302px;
     line-height: 30px;
 }
+
 .footer__img {
     position: absolute;
     right: 177px;
@@ -606,10 +607,17 @@ ul {
 .footer__mobile {
     margin-bottom: 15px;
 }
-.contacts__agreement, .footer__email, .footer__mobile {
+.footer__agreement {
+    line-height: 24px;
+}
+.footer__text {
+    line-height: 30.1px;
+}
+.footer__agreement, .footer__email, .footer__mobile {
     color: #CC9933;
 }
 .footer__social {
+    margin-left: 270px;
     max-height: 115px;
     display: flex;
     flex-direction: column;
