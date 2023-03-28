@@ -1,25 +1,25 @@
 /*----all----*/
 @font-face { 
     font-family: "Muller";
-    src: url("/font/MullerBold.woff") format("woff");
+    src: url("../font/MullerBold.woff") format("woff");
     font-style: normal;
     font-weight: 700;
 }
 @font-face { 
     font-family: "Muller";
-    src: url("/font/MullerRegular.woff") format("woff");
+    src: url("../font/MullerRegular.woff") format("woff");
     font-style: normal;
     font-weight: 400;
 }
 @font-face { 
     font-family: "Muller";
-    src: url("/font/MullerMedium.woff") format("woff");
+    src: url("../font/MullerMedium.woff") format("woff");
     font-style: normal;
     font-weight: 500;
 }
 @font-face { 
     font-family: "Muller";
-    src: url("/font/MullerExtraBold.woff") format("woff");
+    src: url("../font/MullerExtraBold.woff") format("woff");
     font-style: normal;
     font-weight: 800;
 }
@@ -89,6 +89,7 @@ ul {
     justify-items: center;
     color: #CC9933;
     cursor: default;
+    transition-duration: 1000ms;
 }
 
 .header__exit:hover {
@@ -141,6 +142,9 @@ ul {
     margin-right: 114px;
     cursor: default; 
 }
+.header__nav-item {
+    transition-duration: 1000ms;
+}
 .header__nav-item:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -165,18 +169,18 @@ ul {
     position: relative;
 }
 .offers__item:first-child {
-    background-image: url('/img/gradient.png'), url('/img/maldivi.jpg');
+    background-image: url('../img/gradient.png'), url('../img/maldivi.jpg');
     background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
     Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
     margin-bottom: 24px;
 }
 .offers__item:nth-child(2) {
-    background-image: url('/img/gradient.png'), url('/img/krit.jpg');
+    background-image: url('../img/gradient.png'), url('../img/krit.jpg');
     background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
     Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
 }
 .offers__luxe {
-    background-image: url('/img/luxe.jpg');
+    background-image: url('../img/luxe.jpg');
     background-size: contain; /*Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. 
     Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.*/
     Width: 573px;
@@ -267,23 +271,23 @@ ul {
 }
 .services__item:first-child {
     margin-bottom: 24px;
-    background-image: url("/img/shampain.jpg");
+    background-image: url("../img/shampain.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .services__item:nth-child(2) {
     margin-bottom: 24px;
-    background-image: url("/img/table.jpg");
+    background-image: url("../img/table.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .services__item:nth-child(3) {
-    background-image: url("/img/sauna.jpg");
+    background-image: url("../img/sauna.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .services__item:nth-child(4) {
-    background-image: url("/img/car.jpg");
+    background-image: url("../img/car.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -406,40 +410,40 @@ ul {
 
 }
 .placement__item:first-child {
-    background-image: url('/img/hotel.jpg');
+    background-image: url('../img/hotel.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(2) {
-    background-image: url('/img/Lagoona son típicas.jpg');
+    background-image: url('../img/Lagoona son típicas.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(3) {
-    background-image: url('/img/Lagoona de la guerra.jpg');
+    background-image: url('../img/Lagoona de la guerra.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(4) {
-    background-image: url('/img/Lagoona mentira piadosa.jpg');
+    background-image: url('../img/Lagoona mentira piadosa.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(5){
-    background-image: url('/img/Lagoona empujar la creatividad.jpg');
+    background-image: url('../img/Lagoona empujar la creatividad.jpg');
     background-repeat: no-repeat;
 }
 
 .placement__item:nth-child(6) {
-    background-image: url('/img/Lagoona el retorno.jpg');
+    background-image: url('../img/Lagoona el retorno.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(7){
-    background-image: url('/img/Lagoona mentira piadosa2.jpg');
+    background-image: url('../img/Lagoona mentira piadosa2.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:nth-child(8){
-    background-image: url('/img/Lagoona suerte siguió siempre.jpg');
+    background-image: url('../img/Lagoona suerte siguió siempre.jpg');
     background-repeat: no-repeat;
 }
 .placement__item:last-child{
-    background-image: url('/img/island.jpg');
+    background-image: url('../img/island.jpg');
     background-repeat: no-repeat;
 }
 .placement__tab-nav {
