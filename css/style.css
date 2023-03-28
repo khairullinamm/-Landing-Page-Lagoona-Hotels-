@@ -450,9 +450,10 @@ ul {
 .want__title {
     padding-top: 45px;
 }
+
 .want__panel {
     display: flex;
-    justify-content: space-between;
+    position: relative;
     background-color: white;
     height: 106px;
     width: 1080px;
@@ -463,7 +464,7 @@ ul {
     display: inline-block;
     font-size: 12px;
     line-height: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 .want__topic:hover .want__name{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -473,19 +474,35 @@ ul {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
+.want__select {
+    width: 176px;
+}
 .want__topic {
-    margin-top: 31px;
-    margin-right: 41px;
+    margin-top: 27px;
+    margin-right: 33px;
 }
 .want__topic:last-of-type {
     margin-right: 51px;
 }
 .want__city {
-    margin-left: 28px;
+    margin-left: 25px;
 }
 .want__btn {
-    margin-right: 28px;
-    margin-top: 31px;
+    position: absolute;
+    right: 28px;
+    top:31px;
+    padding: 13px 29px;
+}
+.want__date-form {
+    width: 134px;
+}
+input {
+    width: 121px;
+}
+.want__nights-form, .want__tourist-form {
+    width: 121px;
+    border-bottom: 1px solid #E9E9E9;
+    margin-right: 8px;
 }
 /*----conatacts----*/
 .contacts__panel {
