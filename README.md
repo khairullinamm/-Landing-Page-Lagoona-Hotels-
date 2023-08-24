@@ -19,7 +19,7 @@ The goal of the project is to put the skills of HTML and CSS into practice. "Lag
 ## Project status
 _Project is: complete._
 
+![Иллюстрация к проекту](https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png)
+
 ## Contacts
 [@milanahmm](https://t.me/milanahmm) - contact me!
-
-![Иллюстрация к проекту](https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png)
