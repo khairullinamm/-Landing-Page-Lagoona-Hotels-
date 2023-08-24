@@ -1,5 +1,4 @@
 # Pet-project: "Lagoona Hotels"
-![Иллюстрация к проекту](https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png)
 
 ## Описание проекта
 Проект создан с целью приминения на практике базовых знаний HTML и CSS для создания верстки одностраничного сайта. 
@@ -18,3 +17,5 @@
 3. Использование технологии FlexBox
 
 _Статус проекта: закончен_
+
+![Иллюстрация к проекту](https://github.com/khairullinamm/-Landing-Page-Lagoona-Hotels-/raw/main/figma.png)
